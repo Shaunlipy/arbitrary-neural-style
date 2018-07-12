@@ -5,3 +5,5 @@ models/*
 .idea/*
 .env/*
 *.ipynb
+*.pth
+*.tar

@@ -1,5 +1,6 @@
 import torchvision.transforms as transforms
 from torch.autograd import Variable
+import ipdb
 
 from PIL import Image
 
@@ -8,7 +9,7 @@ import scipy.misc
 imsize = 256
 
 loader = transforms.Compose([
-    transforms.Scale(imsize),
+    transforms.Resize((imsize,imsize)),
     transforms.ToTensor()])
 
 unloader = transforms.ToPILImage()
